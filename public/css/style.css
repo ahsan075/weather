@@ -525,3 +525,15 @@ footer p {
     font-size: 1.1rem;
   }
 }
+
+@media (max-width: 410px) {
+  .w-100 {
+    width: 300px !important;
+  }
+}
+
+@media (max-width: 310px) {
+  .w-100 {
+    width: 250px !important;
+  }
+}

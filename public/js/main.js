@@ -6,6 +6,8 @@ toggleBtn.addEventListener("click", function (e) {
   toggleBtn.classList.toggle("change");
 });
 
+let widthDiv = document.querySelectorAll(".w-100");
+
 window.addEventListener("load", function (e) {
   console.log(window.innerWidth);
 });
