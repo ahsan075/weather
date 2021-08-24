@@ -26,31 +26,31 @@ hbs.registerPartials(partials_path);
 // Home Page //
 
 app.get("/", (req, res) => {
-  res.render("index");
+    res.render("index");
 });
 
 // About Page //
 
 app.get("/about", (req, res) => {
-  res.render("about");
+    res.render("about");
 });
 
 // Weather Page //
 
-app.get("/weather", (req, res) => {
-  res.render("weather");
+app.get("/current", (req, res) => {
+    res.render("currentWeather");
 });
 
 // Error Page //
 
 app.get("*", (req, res) => {
-  res.render("404error", {
-    errorMsg: "Opps! Page Not Found",
-  });
+    res.render("404error", {
+        errorMsg: "Opps! Page Not Found",
+    });
 });
 
 // Listening Port //
 
 app.listen(port, () => {
-  console.log("Server Running");
+    console.log("Server Running");
 });
